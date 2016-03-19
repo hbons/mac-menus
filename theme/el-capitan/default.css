@@ -1,0 +1,172 @@
+body {
+  background-image: url("../../theme/el-capitan/background.jpg");
+  background-position: bottom center;
+  font-family: "SF UI Text", "Helvetica Neueu", sans-serif;
+  color: #000;
+}
+
+.item {
+  color: #000;
+}
+
+
+/* Menu Bar */
+
+#apple header {
+  color: rgba(0, 0, 0, 0) !important;
+  background-image: url("../../img/apple.svg");
+  background-position: center 2px;
+}
+
+#apple.active header {
+  background-image: url("../../img/apple-highlight.svg");
+}
+
+.bar {
+  height: 22px;
+  background-color: rgba(245, 245, 245, 0.9);
+  font-size: 14px;
+  padding-left: 11px;
+}
+
+.bar > #apple > header {
+  padding: 0 9px;
+  font-size: 17px;
+}
+
+.bar > #app > header {
+  font-weight: 700;
+}
+
+.bar > .item > header {
+  line-height: 22px;
+  padding: 0 8.7px;
+}
+
+.active {
+  background-color: #2D8AF9;
+  color: #fff;
+}
+
+
+/* Menu */
+
+.menu {
+  padding: 4px 0;
+  background-color: rgba(235, 235, 235, 0.95);
+  top: 22px;
+  min-width: 125px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 0.5px 0 0.5px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+  height: 8px;
+  border: none;
+  margin: 0;
+}
+
+hr:after {
+    content: '';
+    display: block;
+    margin-top: 6px;
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+
+/* Submenu */
+
+.menu > .item > header {
+  background-image: url("../../img/submenu-indicator.svg");
+  padding-right: 24px;
+  background-position: center right 9px;
+  margin: -2px -20px -3px -20px;
+  padding: 2px 40px 3px 20px;
+}
+
+.menu > .item:hover > header {
+  background-image: url("../../img/submenu-indicator-highlight.svg");
+}
+
+.menu > .item > .menu {
+  top: -4px;
+  border-radius: 5px;
+  color: #000;
+}
+
+
+/* Items */
+
+.item.disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.menu > .item {
+  padding: 2px 20px 3px 20px;
+}
+
+.menu > .item:not(.disabled):hover {
+  background-color: #2D8AF9 ;
+  color: #fff;
+}
+
+.item.checkmark {
+  background-image: url("../../img/checkmark.svg");
+  background-position: 4px 2px;
+}
+
+.item.checkmark:hover {
+  background-image: url("../../img/checkmark-highlight.svg");
+}
+
+.item.document {
+  padding-left: 36px;
+  background-image: url("../../img/document.png");
+  background-position: 16px 1px;
+  background-size: 16px 16px;
+}
+
+.item.document:hover {
+  background-image: url("../../img/document-highlight.png");
+}
+
+
+/* Help Menu */
+
+.bar > #help > .menu {
+  background-color: rgba(240, 240, 240, 1.0);
+}
+
+.bar > #help > .menu > .item {
+  padding-left: 56px;
+  width: 350px;
+}
+
+.bar > #help > .menu > .item:first-child {
+  font-weight: 500;
+  font-size: 13.5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #D8D5D4;
+}
+
+.bar > #help > .menu > .item:first-child {
+  color: inherit;
+}
+
+input {
+  width: 231px;
+  padding: 1px 8px;
+  margin-left: 8px;
+  line-height: 20px;
+  color: #000;
+  border: 1px solid #C3C3C1;
+  font-size: 22px;
+  height: 22px;
+  border-radius: 3px;
+  background-color: #D8D5D4;
+}
+
+.bar > #help > .menu > .item:nth-child(2) {
+  margin-top: 31px;
+}

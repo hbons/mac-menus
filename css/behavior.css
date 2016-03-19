@@ -1,0 +1,56 @@
+* {
+  background-repeat: no-repeat !important;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  cursor: default;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; 
+  -khtml-user-select: none;  
+  -moz-user-select: none;  
+  -ms-user-select: none;      
+  user-select: none;
+  overflow: hidden;
+}
+
+.bar > .item {
+  float: left;
+}
+
+.bar > #help > .menu > .item:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item {
+  position: relative;
+  white-space: nowrap;
+}
+
+.menu {
+  position: absolute;
+  display: none;
+}
+
+.menu > .item > .menu {
+  left: 100%;
+}
+
+input:focus {
+    outline: 0;
+}
+
+#window {
+  position: absolute;
+  background-position: top center;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 5%;
+  left: 0;
+}

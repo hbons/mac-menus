@@ -1,0 +1,78 @@
+body, .item {
+  color: #fff !important;
+}
+
+
+/* Menu Bar */
+
+#apple header {
+  background-image: url("../../img/apple-highlight.svg") !important;
+}
+
+.bar {
+  background-color: rgba(25, 25, 25, 0.8) !important;
+}
+
+.bar > .item.active > header {
+  background-color: #2D8AF9 !important;
+  color: #fff !important;
+}
+
+
+/* Menu */
+
+.menu {
+  background-color: rgba(70, 70, 70, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.menu > .separator {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+hr:after {
+    border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+
+/* Submenu */
+
+.menu > .item > header {
+  background-image: url("../../img/submenu-indicator-highlight.svg") !important;
+}
+
+
+/* Items */
+
+.item.disabled {
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.menu > .item:not(.disabled):hover {
+  background-color: #2D8AF9 !important;
+}
+
+.item.checkmark {
+  background-image: url("../../img/checkmark-highlight.svg") !important;
+}
+
+.item.document {
+  background-image: url("../../img/document-highlight.png");
+}
+
+
+/* Help Menu */
+
+.bar > #help > .menu {
+  background-color: rgba(60, 60, 60, 1.0) !important;
+}
+
+.bar > #help > .menu > .item:first-child {
+  background-color: #858683 !important;
+}
+
+input {
+  background-color: #797674 !important;
+  border-color: #8D8B88  !important;
+  color: #fff !important;
+}

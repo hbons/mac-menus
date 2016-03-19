@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Menus Prototype</title>
+    
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/behavior.js"></script>
+    
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/behavior.css">
+    <link rel="stylesheet" href="../../theme/el-capitan/default.css">
+    <link rel="stylesheet" href="../../theme/el-capitan/dark.css">
+  </head>
+  <body>
+    <div id="window"
+         style="background-image: url('window.png');
+                background-size: 1014px 774px;">
+    </div>
+    <div class="bar">
+      <div class="item" id="apple">
+        <header></header>
+        <div class="menu">
+          <div class="item">About This Mac</div>
+          <hr>
+          <div class="item">System Preferences…</div>
+          <div class="item">App Store…</div>
+          <hr>
+          <div class="item">Force Quit…</div>
+          <hr>
+          <div class="item">Sleep</div>
+          <div class="item">Restart…</div>
+          <div class="item">Shut Down…</div>
+          <hr>
+          <div class="item">Log Out Hylke Bons…</div>
+        </div>
+      </div>
+      
+      <div class="item" id="app">
+        <header>Demo</header>
+        <div class="menu">
+          <div class="item">About Demo</div>
+          <hr>
+          <div class="item">Preferences…</div>
+          <hr>
+          <div class="item">
+            <header>Services</header>
+            <div class="menu">
+              <div class="item disabled">No Services Apply</div>
+            </div>
+          </div>
+          <hr>
+          <div class="item">Hide Demo</div>
+          <div class="item">Hide Others</div>
+          <div class="item disabled">Show All</div>
+          <hr>
+          <div class="item">Quit</div>
+        </div>
+      </div>
+      
+      <div class="item">
+        <header>File</header>
+        <div class="menu">
+          <div class="item">New</div>
+          <div class="item">Open…</div>
+          <div class="item">
+            <header>Open Recent</header>
+            <div class="menu">
+              <div class="item document">README.md</div>
+              <div class="item document">default.css</div>
+              <div class="item document">demo.html</div>
+            </div>
+          </div>
+          <hr>
+          <div class="item disabled">Save</div>
+          <div class="item">Save As…</div>
+          <hr>
+          <div class="item">Page Setup</div>
+          <div class="item">Print…</div>
+        </div>
+      </div>
+      
+      <div class="item">
+        <header>Edit</header>
+        <div class="menu">
+          <div class="item disabled">Undo</div>
+          <div class="item disabled">Redo</div>
+          <hr>
+          <div class="item disabled">Cut</div>
+          <div class="item disabled">Copy</div>
+          <div class="item">Paste</div>
+          <hr>
+          <div class="item">Select All</div>
+          <hr>
+          <div class="item">
+            <header>Insert</header>
+            <div class="menu">
+              <div class="item">Image</div>
+              <div class="item">Link</div>
+              <div class="item">Horizontal Ruler</div>
+            </div>
+          </div>
+          <hr>
+          <div class="item checkmark">Bold</div>
+          <div class="item checkmark">Italic</div>
+          <div class="item">Underline</div>
+        </div>
+      </div>
+
+      <div class="item">
+        <header>Window</header>
+        <div class="menu">
+          <div class="item">Minimize</div>
+          <div class="item">Next Window</div>
+          <div class="item">Previous Window</div>
+          <hr>
+          <div class="item">Close All</div>
+          <hr>
+          <div class="item checkmark">Untitled</div>
+          <hr>
+          <div class="item">Welcome Screen</div>
+        </div>
+      </div>
+
+      <div class="item" id="help">
+        <header>Help</header>
+        <div class="menu">
+          <div class="item">Search <input type="text"></div>
+          <div class="item">Demo Help</div>
+        </div>        
+      </div>
+    </div>
+  </body>
+</html>
