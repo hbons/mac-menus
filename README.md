@@ -1,11 +1,11 @@
 ## Mac Menus Prototype
 
-[![Preview](https://github.com/hbons/mac-menus-prototype/blob/gh-pages/img/preview.png?raw=true)](https://hbons.github.io/mac-menus-prototype/prototypes/demo/demo.html)
+[![Preview](https://github.com/hbons/mac-menus/blob/gh-pages/img/preview.png?raw=true)](https://hbons.github.io/mac-menus-prototype/prototypes/demo/demo.html)
 
 Mac OS X's menu bar in HTML5 for prototyping.
 Use this to design and test your app's menu system.
 
-Here's a [demo](https://hbons.github.io/mac-menus-prototype/prototypes/demo/demo.html).
+Here's a [demo](https://hbons.github.io/mac-menus/prototypes/demo/demo.html).
 
 ### Example
 
