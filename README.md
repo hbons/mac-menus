@@ -11,7 +11,7 @@ Here's a [demo](https://hbons.github.io/mac-menus-prototype/prototypes/demo/demo
 
 ```html
 <div class="bar"> <!-- The menu bar -->
-    <div class="item">
+    <div id="example" class="item">
         <header>Edit</header> <!-- Toplevel menu -->
         <div class="menu">
             <div class="item disabled">Undo</div> <!-- Disabled items -->
@@ -35,3 +35,5 @@ Here's a [demo](https://hbons.github.io/mac-menus-prototype/prototypes/demo/demo
     </div>
 </div>
 ```
+
+You can choose a menu to open by default by specifying its `#ID` in the page `URL`.

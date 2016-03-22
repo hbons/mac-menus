@@ -45,7 +45,7 @@ input:focus {
     outline: 0;
 }
 
-#window {
+#preview {
   position: absolute;
   background-position: top center;
   z-index: -1;
