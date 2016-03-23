@@ -2,10 +2,9 @@ $(document).ready(function() {
 
     var menuIsOpen = false;
     var submenuIsOpen = false;
-    var lastClickedItem = null;
 
     if(window.location.hash)
-        OpenMenu($(".bar > " + window.location.hash + ".item:not(.disabled)"));
+        MenuClicked($(".bar > " + window.location.hash + ".item:not(.disabled)"));
 
     $("html").click(function() {
         $(".menu").fadeOut(150);
@@ -20,7 +19,7 @@ $(document).ready(function() {
     });
 
     $(".bar > .item:not(.disabled)").on("click", function(event) { 
-        OpenMenu (this);
+        MenuClicked(this);
 
         $("input").focus();
         event.stopPropagation();
@@ -49,21 +48,19 @@ $(document).ready(function() {
         $(this).find("> .item").removeClass("active");
     });
 
-    function OpenMenu(item) {
+    function MenuClicked(item) {
         $(".item").removeClass("active");
-        $(item).toggleClass("active");
 
         if(menuIsOpen) {
-            if (lastClickedItem == item)
-                $(item).find("> .menu").fadeOut(150);
+            $(item).removeClass("active");
+            $(item).find("> .menu").fadeOut(150);
 
             menuIsOpen = false;
-            return;
+            
         } else {
+            $(item).addClass("active");
             $(item).find("> .menu").show();
             menuIsOpen = true;
         }
-
-        lastClickedItem = item;
     }
 });
